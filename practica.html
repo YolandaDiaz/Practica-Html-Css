@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio práctica</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- barra de navegación a cada link del portfolio -->
+    <nav>
+        <ul>
+            <a href="#skills">Skills</a>
+            <a href="#formulario">Formulario</a>
+            <a href="#contacto">Contacto</a>
+        </ul>
+    </nav>
+    <!-- cabecera con imagen de fondo, optimizada para distintas resoluciones -->
+    <header>
+        <figure>
+            <img class="fondo"
+                src="/Fondo.JPG" 
+                alt="descripción imagen"
+                title="texto al posicionarse sobre la imagen">
+            <figcaption>Descripción para accesibilidad</figcaption>
+        </figure>
+    </header>
+    <!-- Sección con nuestras skills de programación y progreso de las mismas. barras de progreso animadas con css-->
+    <ul>
+        <h3 id="skills">Mis Skills</h3>
+            <div>
+            <li>Lógica</li>
+            <progress max = "100" value="90">
+            </div>
+            <div>
+            <li>Abstracción</li>
+            <progress max = "100" value="30">
+            </div>
+            <div>
+            <li>Cálculo</li>
+            <progress max = "100" value="80">
+            </div>
+            <div>
+            <li>Python</li>
+            <progress max = "100" value="40">
+            </div>
+            <div>
+            <li>Html</li>
+            <progress max = "100" value="70">
+            </div>
+            <div>
+            <li>Git</li>
+            <progress max = "100" value="65">
+            </div>
+    </ul>
+    <!-- Formulario con inputs Comentar que le pondríamos method y action, pero lo dejamos vacío porque aún no sabemos hacer esto-->
+    <form action="adonde lo envío" method="post">
+        <h3 id="formulario">Contacto</h3>
+        <div>
+            <label for="name">Nombre</label>
+            <input required id="name" name="name" type="text" placeholder="Añade tu nombre">
+        </div>
+        <div>
+            <label for="surname">Apellidos</label>
+            <input required id="surname" name="surname" type="text" placeholder="Añade tus apellidos">
+        </div>
+        <div>
+            <label for="phone">Teléfono</label>
+            <input required id="phone" name="phone" type="tel" pattern="[0-9]+" placeholder="Añade tu número de teléfono">
+        </div>
+        <fieldset>
+            <legend>¿Cómo me conociste?</legend>
+            <label for="university">Universidad</label>
+            <input id="university" type="radio" name="how-meet" value="university">
+
+            <label for="keepcoding">Keepcoding kick-off</label>
+            <input id="keepcoding" type="radio" name="how-meet" value="keepcoding">
+
+            <label for="school">Colegio</label>
+            <input id="school" type="radio" name="how-meet" value="school">
+
+            <label for="github">En Github</label>
+            <input id="github" type="radio" name="how-meet" value="github">
+        </fieldset>
+        <div>
+            <!-- tag de github-->
+            <label for="github">Tag de Github</label>
+            <input id="github" type="text" pattern="^@[^\s]+" placeholder="Con este formato (@<username>)">
+        </div>
+        <label for="description">Descripción</label>
+        <textarea required name="description" id="description" cols="30" rows="10" placeholder="Agrega una descripción" maxlength="180"></textarea>
+        <div>
+        <input type="submit" value="Enviar">
+        </div>
+    </form>
+    <!-- Pie con links a mis redes sociales. Son links a un recurso externo y no queremos dejar info nuestra en esas redes -->
+    <footer id="contacto" >
+        <a href="https://twitter.com">Twitter</a>
+        <a href="https://es-es.facebook.com">Facebook</a>
+        <a href="https://www.youtube.com">Youtube</a>
+    </footer>
+</body>
+</html>
