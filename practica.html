@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio práctica</title>
+    <title>Portfolio Sheldon</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- barra de navegación a cada link del portfolio -->
-    <nav class="navbar">
-        <img 
-            class="logo"
-            src="/Cara Sheldon.jpg" 
-            alt="Sheldon Cooper"
-            title="Sheldon Cooper">
-        <ul class="link">
-            <a href="#skills">Skills</a>
-            <a href="#formulario">Formulario</a>
-            <a href="#contacto">Contacto</a>
-        </ul>
-    </nav>
-    <!-- cabecera con imagen de fondo, optimizada para distintas resoluciones -->
     <header>
+    <!-- barra de navegación con enlace a cada link del portfolio -->
+        <nav class="navbar">
+            <div>
+                <img 
+                class="logonav"
+                src="/Cara Sheldon.jpg" 
+                alt="Sheldon Cooper"
+                title="Sheldon Cooper">
+            </div>
+            <ul class="menunav">
+                <button class="menubutton">Menu</button>
+                <div class="linksnav">
+                    <a href="#skills">Skills</a>
+                    <a href="#formulario">Formulario</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </ul>
+        </nav>
         <figure>
             <img 
                 class="fondo"
@@ -32,21 +36,32 @@
                 title="Pizarra">
             <figcaption>Pizarra con dibujo de átomo</figcaption>
         </figure>
-        <h2>Sheldon Cooper</h2>
-        <p>Dr. Sheldon Lee Cooper comúnmente llamado Sheldon, Shelly por su madre, o "Pastelito" 
+    </header>
+    <div>
+        <h3>Sheldon Cooper</h3>
+        <div class="text">
+            <p>
+            Dr. Sheldon Lee Cooper comúnmente llamado Sheldon, Shelly por su madre, o "Pastelito" 
             por su abuela, tiene un cociente intelectual de 187 y no sufre ninguna enfermedad mental, 
             ya que su madre lo comprobó cuando era pequeño. Pero sí padece ornitofobia, miedo desmesurado 
             hacia los pájaros, debido a que a los dos años, un colibrí se posó en su cochecito y se bebió el zumo de manzana de su tacita.
+            </p>
+            <p>
             A los tres años, ya había memorizado más de mil tipos distintos de trenes, los cuales son una 
             de las grandes pasiones de Sheldon.
+            </p>
+            <p>
             Su color favorito es el azul pálido del sable de luz de Luke Skywalker antes de que fuese 
             remasterizado digitalmente.
+            </p>
+            <p>
             Tiene memoria eidética, y habla muchos idiomas, Klingon entre ellos.
-        </p>
-    </header>
+            </p>
+        </div>
+    </div>
     <!-- Sección con las skills de programación y progreso de las mismas. Barras de progreso animadas con css-->
     <ul>
-        <h3 class="titulo" id="skills">Mis Skills</h3>
+        <h3 id="skills">Mis Skills</h3>
         <div class="skills">
             <div>
             <li>Lógica</li>
@@ -77,8 +92,8 @@
         </div>
     </ul>
     <!-- Formulario con inputs Comentar que le pondríamos method y action, pero lo dejamos vacío porque aún no sabemos hacer esto-->
-    <form action="adonde lo envío" method="post">
-        <h3 class="titulo" id="formulario">Contacto</h3>
+    <form class="form" action="adonde lo envío" method="post">
+        <h3 id="formulario">Contacto</h3>
         <div>
             <label for="name">Nombre</label>
             <input required id="name" name="name" type="text" placeholder="Añade tu nombre">
@@ -91,7 +106,11 @@
             <label for="phone">Teléfono</label>
             <input required id="phone" name="phone" type="tel" pattern="[0-9]+" placeholder="Añade tu número de teléfono">
         </div>
-        <fieldset>
+        <div>
+            <label for="github">Tag de Github</label>
+            <input id="github" type="text" pattern="^@[^\s]+" placeholder="Con este formato (@<username>)">
+        </div>
+        <fieldset class="meetme">
             <legend>¿Cómo me conociste?</legend>
             <label for="university">Universidad</label>
             <input id="university" type="radio" name="how-meet" value="university">
@@ -106,13 +125,9 @@
             <input id="github" type="radio" name="how-meet" value="github">
         </fieldset>
         <div>
-            <!-- tag de github-->
-            <label for="github">Tag de Github</label>
-            <input id="github" type="text" pattern="^@[^\s]+" placeholder="Con este formato (@<username>)">
-        </div>
-        <label for="description">Descripción</label>
+        <legend>Descripción</legend>
+        <label for="description"></label>
         <textarea required name="description" id="description" cols="30" rows="10" placeholder="Agrega una descripción" maxlength="180"></textarea>
-        <div>
         <input type="submit" value="Enviar">
         </div>
     </form>
