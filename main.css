@@ -1,0 +1,61 @@
+:root {
+    --primary-color: hsl(293, 90%, 26%);
+    font-size: 16px;
+}
+
+.logo {
+    width: 10%;
+    max-width: 3rem;
+    text-align: left;
+}
+
+.fondo {
+    width: 100vw;
+    
+}
+
+.navbar {
+    background-color: (var(--primary-color));
+    width: 100vw;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+}
+
+.footer {
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: (var(--primary-color));
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
+.titulo {
+    text-decoration: wavy;
+    color: (--primary-color);
+    font-size: large;
+    font-weight: 300;
+    font-family: fantasy;
+    text-align: center;
+    outline-style: dotted;
+    outline-color: (var(--primary-color));
+}
+
+.progress {
+    -ms-progress-appearance: bar, right,  ;
+    color: blueviolet;
+}

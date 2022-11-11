@@ -10,13 +10,13 @@
 </head>
 <body>
     <!-- barra de navegación a cada link del portfolio -->
-    <nav>
+    <nav class="navbar">
         <img 
             class="logo"
             src="/Cara Sheldon.jpg" 
             alt="Sheldon Cooper"
             title="Sheldon Cooper">
-        <ul>
+        <ul class="link">
             <a href="#skills">Skills</a>
             <a href="#formulario">Formulario</a>
             <a href="#contacto">Contacto</a>
@@ -33,15 +33,24 @@
             <figcaption>Pizarra con dibujo de átomo</figcaption>
         </figure>
         <h2>Sheldon Cooper</h2>
-        <p>Presentación de Sheldon
+        <p>Dr. Sheldon Lee Cooper comúnmente llamado Sheldon, Shelly por su madre, o "Pastelito" 
+            por su abuela, tiene un cociente intelectual de 187 y no sufre ninguna enfermedad mental, 
+            ya que su madre lo comprobó cuando era pequeño. Pero sí padece ornitofobia, miedo desmesurado 
+            hacia los pájaros, debido a que a los dos años, un colibrí se posó en su cochecito y se bebió el zumo de manzana de su tacita.
+            A los tres años, ya había memorizado más de mil tipos distintos de trenes, los cuales son una 
+            de las grandes pasiones de Sheldon.
+            Su color favorito es el azul pálido del sable de luz de Luke Skywalker antes de que fuese 
+            remasterizado digitalmente.
+            Tiene memoria eidética, y habla muchos idiomas, Klingon entre ellos.
         </p>
     </header>
     <!-- Sección con las skills de programación y progreso de las mismas. Barras de progreso animadas con css-->
     <ul>
-        <h3 id="skills">Mis Skills</h3>
+        <h3 class="titulo" id="skills">Mis Skills</h3>
+        <div class="skills">
             <div>
             <li>Lógica</li>
-            <progress max = "100" value="90">
+            <progress class="progress" max = "100" value="90">
             </div>
             <div>
             <li>Abstracción</li>
@@ -51,6 +60,8 @@
             <li>Cálculo</li>
             <progress max = "100" value="95">
             </div>
+        </div>
+        <div class="skills">
             <div>
             <li>Python</li>
             <progress max = "100" value="72">
@@ -63,10 +74,11 @@
             <li>Git</li>
             <progress max = "100" value="65">
             </div>
+        </div>
     </ul>
     <!-- Formulario con inputs Comentar que le pondríamos method y action, pero lo dejamos vacío porque aún no sabemos hacer esto-->
     <form action="adonde lo envío" method="post">
-        <h3 id="formulario">Contacto</h3>
+        <h3 class="titulo" id="formulario">Contacto</h3>
         <div>
             <label for="name">Nombre</label>
             <input required id="name" name="name" type="text" placeholder="Añade tu nombre">
@@ -105,7 +117,7 @@
         </div>
     </form>
     <!-- Pie con links a mis redes sociales. Son links a un recurso externo y no queremos dejar info nuestra en esas redes -->
-    <footer id="contacto" >
+    <footer class="footer" id="contacto" >
         <a href="https://twitter.com" target="_blank">Twitter</a>
         <a href="https://es-es.facebook.com" target="_blank">Facebook</a>
         <a href="https://www.youtube.com" target="_blank">Youtube</a>
