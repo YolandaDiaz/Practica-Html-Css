@@ -8,48 +8,43 @@ body {
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: (var(--primary-color));
-    padding: 1em 0.5em;
-    width: 100vw;
-}
-.logonav {
-    display: flex;
-    align-items: left;
-    width: 20%;
-    max-width: 30rem;
-}
-.menunav {
-    display: flex;
-}
-.menubutton {
-    display: flex;
-    align-items: flex-end;
-
-}
-.linksnav {
-    display: flex;
-    justify-items: flex-end;
-    color: #fff;
-    text-decoration: none;
-    text-align: right;
-}
-h1 {
-    color: rgb(184, 7, 7);
-    font-size: 50px;
+h3 {
+    color: var(--primary-color);
+    font-size: 28px;
     font-weight: 300;
     font-family: fantasy;
     text-align: center;
+    margin: 5%; 
+    text-shadow: 3px 3px 1px rgb(146, 139, 139);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(108, 4, 134);
+}
+.logonav {
+    width: 5rem;
+    height: 5rem;
+}
+.menubutton {
+    
+}
+.linksnav {
+    display: flex;
+    justify-items: end;
+    color: rgb(207, 192, 211);
+    transition: 6s;
+    text-decoration: none;
+    text-align: right;
 }
 .fondo {
-    width: 100vw;
     height: 35vh;
+    width: 100vw;
 }
 .text {
+    text-indent: 15px;
+    text-overflow: ;
     font-size: 20px;
-    width: 90vmax;
     background-color: #c9bcc7;
     padding: 20px;
     border: 2px dotted rgb(37, 34, 34);
@@ -62,20 +57,12 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
     margin: 5%;
+    color: rgb(51, 14, 46);
 }
-h3 {
-    color: var(--primary-color);
-    font-size: 28px;
-    font-weight: 300;
-    font-family: fantasy;
-    text-align: center;
-    margin: 5%; 
-    text-shadow: 3px 3px 1px rgb(146, 139, 139);
-}
+
 .form {
     display: list-item;
     align-items: initial;
-    width: 90vw;
     background-color: #bbb9c9;
     margin: 2%;
     padding: 20px;
@@ -102,13 +89,36 @@ h3 {
 
 .footer {
     background-color: rgb(10, 1, 31);
-    width: 100vw;
     height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-decoration: none;
     color: (var(--primary-color));
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+.linkfooter {
+    text-decoration: none;
+    transition: 5s;
+}
+linkfooter:hover {
+    color: red;
+}
+.navbar .fondo .text .form .footer {
+    width: 100vw;
+}
+/* en proyecto */
+a [href="https://twitter.com"] {
+    background: url(/icons8-twitter-26.png) no-repeat 100% 0;
+    background-size: 16px 16px;
+    padding-right: 19px;
+  }
+
+  @media screen {
+    .skills progress {
+        transition: color 10s linear;
+    }
+    .skills progress {
+        color: aqua;
+    }
+  }

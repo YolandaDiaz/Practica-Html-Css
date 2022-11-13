@@ -15,31 +15,30 @@
             <div>
                 <img 
                 class="logonav"
-                src="/Sheldon.png" 
+                src="/Sheldon saludando.jpg" 
                 alt="Sheldon Cooper"
                 title="Sheldon Cooper">
             </div>
-            <ul class="menunav">
+            <ul>
                 <button class="menubutton">Menu</button>
-                <div class="linksnav">
-                    <a href="#skills">Skills</a>
-                    <a href="#formulario">Formulario</a>
-                    <a href="#contacto">Contacto</a>
+                <div>
+                    <a class="linksnav" href="#skills">Skills</a>
+                    <a class="linksnav" href="#formulario">Formulario</a>
+                    <a class="linksnav" href="#contacto">Contacto</a>
                 </div>
             </ul>
         </nav>
         <figure>
-            <h1>Sheldon Cooper</h1>
             <img 
                 class="fondo"
                 src="/pizarra atomo.jpg" 
                 alt="Pizarra con dibujo de átomo"
                 title="Pizarra">
             <figcaption>Pizarra con dibujo de átomo</figcaption>
-            
         </figure>
     </header>
     <div>
+        <h3>Sheldon Cooper</h1>
         <div class="text">
             <p>
             Dr. Sheldon Lee Cooper comúnmente llamado Sheldon, Shelly por su madre, o "Pastelito" 
@@ -76,7 +75,7 @@
         <div class="skills">
             <div>
             <li>Memoria</li>
-            <progress max = "100" value="100">
+            <progress class="progress" max = "100" value="100">
             </div>
             <div>
             <li>Cálculo</li>
@@ -102,7 +101,7 @@
         <ul class="inputform">
             <label for="github">Tag de Github</label>
             <input id="github" type="text" pattern="^@[^\s]+" placeholder="Con este formato (@<username>)">
-            </ul>
+        </ul>
         <fieldset class="meetme">
             <legend>¿Cómo me conociste?</legend>
             <label for="university">Universidad</label>
@@ -120,15 +119,15 @@
         <ul class="inputform">
         <legend >Descripción</legend>
         <label for="description"></label>
-        <textarea  required name="description" id="description" cols="35" rows="10" placeholder="Agrega una descripción" maxlength="180"></textarea>
+        <textarea  required name="description" id="description" cols="30" rows="10" placeholder="Agrega una descripción" maxlength="180"></textarea>
         <input type="submit" value="Enviar">    
         </ul>  
     </form>
     <!-- Pie con links a mis redes sociales. Son links a un recurso externo y no queremos dejar info nuestra en esas redes -->
     <footer class="footer" id="contacto" >
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://es-es.facebook.com" target="_blank">Facebook</a>
-        <a href="https://www.youtube.com" target="_blank">Youtube</a>
+        <a class="linkfooter" href="https://twitter.com" target="_blank">Twitter</a>
+        <a class="linkfooter" href="https://es-es.facebook.com" target="_blank">Facebook</a>
+        <a class="linkfooter" href="https://www.youtube.com" target="_blank">Youtube</a>
     </footer>
 </body>
 </html>
