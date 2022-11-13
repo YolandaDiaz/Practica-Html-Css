@@ -59,7 +59,6 @@ h3 {
     margin: 5%;
     color: rgb(51, 14, 46);
 }
-
 .form {
     display: list-item;
     align-items: initial;
@@ -70,7 +69,6 @@ h3 {
     border-radius: 20px;
     flex-wrap: wrap;
 }
-
 .inputform {
     border: 2px dotted var(--primary-color);
     border-radius: 10px;
@@ -85,9 +83,7 @@ h3 {
     text-align: center;
     flex-wrap: wrap;
     margin: 3%;
-    
 }
-
 .footer {
     background-color: rgb(10, 1, 31);
     height: 10vh;
@@ -108,29 +104,15 @@ linkfooter:hover {
 .navbar .fondo .text .form .footer {
     width: 100vw;
 }
-/* en proyecto */
+
 @keyframes animacion {
     from {
-        
         width: 100%;
     }
     to {
-        
-        
+        background-color: goldenrod;
     }
 } 
 .progress { 
     animation: animacion 8s linear ;
-    background-color: goldenrod;
-    
-
 }
-
-  @media screen {
-    .skills progress {
-        transition: color 10s linear;
-    }
-    .skills progress {
-        color: aqua;
-    }
-  }
