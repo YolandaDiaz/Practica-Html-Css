@@ -85,6 +85,7 @@ h3 {
     text-align: center;
     flex-wrap: wrap;
     margin: 3%;
+    
 }
 
 .footer {
@@ -108,11 +109,22 @@ linkfooter:hover {
     width: 100vw;
 }
 /* en proyecto */
-a [href="https://twitter.com"] {
-    background: url(/icons8-twitter-26.png) no-repeat 100% 0;
-    background-size: 16px 16px;
-    padding-right: 19px;
-  }
+@keyframes animacion {
+    from {
+        
+        width: 100%;
+    }
+    to {
+        
+        
+    }
+} 
+.progress { 
+    animation: animacion 8s linear ;
+    background-color: goldenrod;
+    
+
+}
 
   @media screen {
     .skills progress {
