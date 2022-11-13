@@ -1,6 +1,6 @@
 :root {
     --primary-color: hsl(293, 90%, 26%);
-    font-size: 16px;
+    font-size: 18px;
 }
 body {
     background-color: antiquewhite;
@@ -21,7 +21,7 @@ body {
     width: 20%;
     max-width: 30rem;
 }
-.menunav´{
+.menunav {
     display: flex;
 }
 .menubutton {
@@ -36,16 +36,25 @@ body {
     text-decoration: none;
     text-align: right;
 }
+h1 {
+    color: rgb(184, 7, 7);
+    font-size: 50px;
+    font-weight: 300;
+    font-family: fantasy;
+    text-align: center;
+}
 .fondo {
     width: 100vw;
+    height: 35vh;
 }
 .text {
-    font-size: 18px;
-    width: 90vw;
+    font-size: 20px;
+    width: 90vmax;
     background-color: #c9bcc7;
     padding: 20px;
     border: 2px dotted rgb(37, 34, 34);
     border-radius: 20px;
+    margin: 5%;
 }
 .skills {
     display: flex;
@@ -56,7 +65,7 @@ body {
 }
 h3 {
     color: var(--primary-color);
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 300;
     font-family: fantasy;
     text-align: center;
@@ -64,21 +73,33 @@ h3 {
     text-shadow: 3px 3px 1px rgb(146, 139, 139);
 }
 .form {
-     
-}
-.form > div {
-    background-color: antiquewhite;
-    margin: 10px;
+    display: list-item;
+    align-items: initial;
+    width: 90vw;
+    background-color: #bbb9c9;
+    margin: 2%;
     padding: 20px;
-}
-.meetme {
-    text-align: center;
+    border: 2px dotted rgb(37, 34, 34);
+    border-radius: 20px;
     flex-wrap: wrap;
 }
-.progress {
-    -ms-progress-appearance: bar, right,  ;
-    
+
+.inputform {
+    border: 2px dotted var(--primary-color);
+    border-radius: 10px;
+    margin: 0 0 1em 0;
+    padding: 10px;
+    width: 95%;
 }
+.meetme {
+    border: 2px dotted var(--second-color);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 3%;
+}
+
 .footer {
     background-color: rgb(10, 1, 31);
     width: 100vw;

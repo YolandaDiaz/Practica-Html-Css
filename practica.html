@@ -15,7 +15,7 @@
             <div>
                 <img 
                 class="logonav"
-                src="/Cara Sheldon.jpg" 
+                src="/Sheldon.png" 
                 alt="Sheldon Cooper"
                 title="Sheldon Cooper">
             </div>
@@ -29,16 +29,17 @@
             </ul>
         </nav>
         <figure>
+            <h1>Sheldon Cooper</h1>
             <img 
                 class="fondo"
                 src="/pizarra atomo.jpg" 
                 alt="Pizarra con dibujo de átomo"
                 title="Pizarra">
             <figcaption>Pizarra con dibujo de átomo</figcaption>
+            
         </figure>
     </header>
     <div>
-        <h3>Sheldon Cooper</h3>
         <div class="text">
             <p>
             Dr. Sheldon Lee Cooper comúnmente llamado Sheldon, Shelly por su madre, o "Pastelito" 
@@ -65,51 +66,43 @@
         <div class="skills">
             <div>
             <li>Lógica</li>
-            <progress class="progress" max = "100" value="90">
+            <progress class="progress" max = "100" value="75">
             </div>
             <div>
             <li>Abstracción</li>
-            <progress max = "100" value="05">
+            <progress max = "100" value="15">
+            </div>
+        </div>
+        <div class="skills">
+            <div>
+            <li>Memoria</li>
+            <progress max = "100" value="100">
             </div>
             <div>
             <li>Cálculo</li>
             <progress max = "100" value="95">
             </div>
         </div>
-        <div class="skills">
-            <div>
-            <li>Python</li>
-            <progress max = "100" value="72">
-            </div>
-            <div>
-            <li>Html</li>
-            <progress max = "100" value="20">
-            </div>
-            <div>
-            <li>Git</li>
-            <progress max = "100" value="65">
-            </div>
-        </div>
     </ul>
     <!-- Formulario con inputs Comentar que le pondríamos method y action, pero lo dejamos vacío porque aún no sabemos hacer esto-->
     <form class="form" action="adonde lo envío" method="post">
         <h3 id="formulario">Contacto</h3>
-        <div>
-            <label for="name">Nombre</label>
+        <ul class="inputform">
+            <label for="name" class="etiquetaform">Nombre</label>
             <input required id="name" name="name" type="text" placeholder="Añade tu nombre">
-        </div>
-        <div>
+        </ul>
+        <ul class="inputform">
             <label for="surname">Apellidos</label>
             <input required id="surname" name="surname" type="text" placeholder="Añade tus apellidos">
-        </div>
-        <div>
+        </ul>
+        <ul class="inputform">
             <label for="phone">Teléfono</label>
             <input required id="phone" name="phone" type="tel" pattern="[0-9]+" placeholder="Añade tu número de teléfono">
-        </div>
-        <div>
+        </ul>
+        <ul class="inputform">
             <label for="github">Tag de Github</label>
             <input id="github" type="text" pattern="^@[^\s]+" placeholder="Con este formato (@<username>)">
-        </div>
+            </ul>
         <fieldset class="meetme">
             <legend>¿Cómo me conociste?</legend>
             <label for="university">Universidad</label>
@@ -124,12 +117,12 @@
             <label for="github">En Github</label>
             <input id="github" type="radio" name="how-meet" value="github">
         </fieldset>
-        <div>
-        <legend>Descripción</legend>
+        <ul class="inputform">
+        <legend >Descripción</legend>
         <label for="description"></label>
-        <textarea required name="description" id="description" cols="30" rows="10" placeholder="Agrega una descripción" maxlength="180"></textarea>
-        <input type="submit" value="Enviar">
-        </div>
+        <textarea  required name="description" id="description" cols="35" rows="10" placeholder="Agrega una descripción" maxlength="180"></textarea>
+        <input type="submit" value="Enviar">    
+        </ul>  
     </form>
     <!-- Pie con links a mis redes sociales. Son links a un recurso externo y no queremos dejar info nuestra en esas redes -->
     <footer class="footer" id="contacto" >
