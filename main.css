@@ -17,6 +17,16 @@ h3 {
     margin: 5%; 
     text-shadow: 3px 3px 1px rgb(146, 139, 139);
 }
+.menu{
+    position: relative;
+    border: 1px solid rgb(17, 2, 2);
+    border-radius: 15px;
+    background-color: #201f29;
+    padding: 4%;
+    justify-content: space-around;
+    margin: 2%;
+    
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -26,9 +36,6 @@ h3 {
     width: 5rem;
     height: 5rem;
 }
-.menubutton {
-    
-}
 .linksnav {
     display: flex;
     justify-items: end;
@@ -36,14 +43,13 @@ h3 {
     transition: 6s;
     text-decoration: none;
     text-align: right;
-}
+} 
 .fondo {
     height: 35vh;
     width: 100vw;
 }
 .text {
     text-indent: 15px;
-    text-overflow: ;
     font-size: 20px;
     background-color: #c9bcc7;
     padding: 20px;
@@ -114,5 +120,17 @@ linkfooter:hover {
     }
 } 
 .progress { 
-    animation: animacion 8s linear ;
+    animation: animacion 5s linear ;
+}
+
+@media screen and (min-width: 427px) {
+    .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    .logonav {
+        width: 10rem;
+        height: 10rem;
+    }
 }

@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-    <!-- barra de navegación con enlace a cada link del portfolio -->
+        <!-- barra de navegación con enlace a cada link del portfolio -->
         <nav class="navbar">
             <div>
                 <img 
@@ -19,13 +19,16 @@
                 alt="Sheldon Cooper"
                 title="Sheldon Cooper">
             </div>
-            <ul>
-                <button class="menubutton">Menu</button>
-                <div>
-                    <a class="linksnav" href="#skills">Skills</a>
-                    <a class="linksnav" href="#formulario">Formulario</a>
-                    <a class="linksnav" href="#contacto">Contacto</a>
-                </div>
+            <ul class="menu">
+                <li>
+                    <a class="linksnav" href="#skills"> Skills </a>
+                </li>
+                <li>
+                    <a class="linksnav" href="#formulario"> Formulario </a>
+                </li>
+                <li>
+                    <a class="linksnav" href="#contacto"> Contacto </a>
+                </li>
             </ul>
         </nav>
         <figure>
@@ -34,7 +37,6 @@
                 src="/pizarra atomo.jpg" 
                 alt="Pizarra con dibujo de átomo"
                 title="Pizarra">
-            <figcaption>Pizarra con dibujo de átomo</figcaption>
         </figure>
     </header>
     <div>
@@ -59,9 +61,9 @@
             </p>
         </div>
     </div>
-    <!-- Sección con las skills de programación y progreso de las mismas. Barras de progreso animadas con css-->
+    <!-- Sección con las skills animados con css-->
     <ul>
-        <h3 id="skills">Mis Skills</h3>
+        <h3 id="skills">Skills</h3>
         <div class="skills">
             <div>
             <li>Lógica</li>
@@ -83,7 +85,7 @@
             </div>
         </div>
     </ul>
-    <!-- Formulario con inputs Comentar que le pondríamos method y action, pero lo dejamos vacío porque aún no sabemos hacer esto-->
+    <!-- Formulario con inputs -->
     <form class="form" action="adonde lo envío" method="post">
         <h3 id="formulario">Contacto</h3>
         <ul class="inputform">
@@ -123,7 +125,7 @@
         <input type="submit" value="Enviar">    
         </ul>  
     </form>
-    <!-- Pie con links a mis redes sociales. Son links a un recurso externo y no queremos dejar info nuestra en esas redes -->
+    <!-- Pie con links a redes sociales -->
     <footer class="footer" id="contacto" >
         <a class="linkfooter" href="https://twitter.com" target="_blank">Twitter</a>
         <a class="linkfooter" href="https://es-es.facebook.com" target="_blank">Facebook</a>
