@@ -77,13 +77,99 @@ h3 {
     border-radius: 20px;
     margin: 5%;
 }
-.skills {
+.headline {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     margin: 5%;
     color: rgb(51, 14, 46);
+}
+.headline1 {
+    color: var(--second-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 20px 15px;
+    font-family: 'Papyrus', 'Trebuchet MS', Arial, sans-serif;
+}
+
+.headline2 {
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 25px 15px 15px 15px;
+    font-family: 'Gabriola', 'Trebuchet MS', Arial, sans-serif;
+}
+
+.skills {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5em 1em;
+}
+
+.skills .skills--details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skills .skill-area{
+    width: 100%
+}
+
+.skills .skills--bar{
+    position: relative;
+    border: 0.05em solid #B4863C;
+    border-radius: 20px;
+}
+
+.skills .skills--bar-div{
+    position: relative;
+    width: 0;
+    height: 0.5em;
+    border-radius: 10px;
+    background-color: #B4863C;
+}
+
+.skills .skill-bar-90{
+    animation: animation-skill-bar-90 5s forwards;
+}
+@keyframes animation-skill-bar-90{
+    100%{
+        width: 90%;
+    }
+}
+
+.skills .skill-bar-100{
+    animation: animation-skill-bar-100 5s forwards;
+}
+@keyframes animation-skill-bar-100{
+    100%{
+        width: 100%;
+    }
+}
+
+.skills .skill-bar-75{
+    animation: animation-skill-bar-75 5s forwards;
+}
+@keyframes animation-skill-bar-75{
+    100%{
+        width: 75%;
+    }
+}
+
+.skills .skill-bar-15{
+    animation: animation-skill-bar-15 5s forwards;
+}
+@keyframes animation-skill-bar-15{
+    100%{
+        width: 15%;
+    }
 }
 .form {
     display: list-item;
