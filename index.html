@@ -40,8 +40,8 @@
             <h1>Sheldon Cooper</h1>
         </figure>
     </header>
-    <div>
-        
+    <main>
+    <div>        
         <div class="text">
             <p>
             Dr. Sheldon Lee Cooper comúnmente llamado Sheldon, Shelly por su madre, o "Pastelito" 
@@ -63,29 +63,37 @@
         </div>
     </div>
     <!-- Sección con las skills animados con css-->
-    <ul>
-        <h3 id="skills">Skills</h3>
-        <div class="skills">
+    <div id="skills" class="skills">
+        <h3 class="headline1">Skills</h3>
+        <div class="skill-area">
             <div>
-            <li>Lógica</li>
-            <progress class="progress" max = "100" value="75">
+            <li class="headline2">Lógica</li>
+                <div class="skills--bar">
+                    <div class="skills--bar-div skill-bar-75"></div>
+                </div>            
             </div>
             <div>
-            <li>Abstracción</li>
-            <progress class="progress" max = "100" value="15">
-            </div>
-        </div>
-        <div class="skills">
-            <div>
-            <li>Memoria</li>
-            <progress class="progress" max = "100" value="100">
-            </div>
-            <div>
-            <li>Cálculo</li>
-            <progress class="progress" max = "100" value="95">
+            <li class="headline2>Abstracción</li>
+                <div class="skills--bar">
+                    <div class="skills--bar-div skill-bar-15"></div>
+                </div>
             </div>
         </div>
-    </ul>
+        <div class="skill-area">
+            <div>
+            <li class="headline2>Memoria</li>
+                <div class="skills--bar">
+                    <div class="skills--bar-div skill-bar-100"></div>
+                </div>
+            </div>
+            <div>
+            <li class="headline2>Cálculo</li>
+                <div class="skills--bar">
+                    <div class="skills--bar-div skill-bar-90"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Formulario con inputs -->
     <form class="form" action="a donde lo envío" method="post">
         <h3 id="formulario">Contacto</h3>
@@ -126,6 +134,7 @@
         <input type="submit" value="Enviar">    
         </ul>  
     </form>
+    </main>
     <!-- Pie con links a redes sociales -->
     <footer class="footer" id="contacto" >
         <div>
